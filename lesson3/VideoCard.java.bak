@@ -1,0 +1,5 @@
+interface VideoCard
+{
+	void display();
+	void getname();	
+}

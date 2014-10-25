@@ -1,0 +1,23 @@
+class Dmeng implements VideoCard
+{
+	String videoname;
+	public void display()
+	{
+		System.out.println("Dmeng is videodisplay");
+	}
+	public  Dmeng()
+	{
+		videoname="Dmeng";
+	}
+	public  void setname(String videoname)
+	{
+		this.videoname=videoname;
+	}
+	public String getname()
+	{
+		//System.out.println(videoname);
+		return videoname;
+		
+	}
+	
+}

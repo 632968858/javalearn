@@ -1,0 +1,37 @@
+interface Machine
+{
+	void run();
+}
+class Persion
+{
+	void run()
+	{
+		System.out.println("persion run");
+	}
+}
+class Robot extends Persion
+{
+	 private class Machinerun implements Machine
+	 {
+	 	public void run()
+	 	{
+	 		System.out.println("robot machine run");
+	 	}
+	 }
+	 Machine getmachine()
+	 {
+	 	return Machinerun();
+	 	}
+}
+class testmain
+{
+	public static void main(String[] args)
+	{
+		Robot rb= new Robot();
+		Machine m=rb.getmachine();
+		m.run();
+		rb.run();
+		
+		 
+	}
+}

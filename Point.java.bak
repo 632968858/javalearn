@@ -1,0 +1,32 @@
+class Point
+{
+	int x,y;
+	Point(int a,int b)//构造函数
+	{
+			x=a;
+			y=b;	
+	}
+	Point()
+	{
+		this(1,1);
+	}
+	void output()
+	{
+			System.out.println(x);
+			System.out.println(y);
+	}
+	void output(int x,int y)//此x，y为形参，this.x为该对象的变量
+	{	
+		this.x=x;
+		this.y=y;
+	}
+	public static void main(String[] args)
+	{
+			Point p;
+			p=new Point(2,3);
+			//p.x=10;
+			//p.y=3;
+			p.output(3,3);
+			p.output();
+	}
+}

@@ -1,0 +1,11 @@
+class Computer
+{
+	Dmeng dm = new Dmeng();
+	Mainboard mb= new Mainboard();
+	public static void main(String[] args)
+	{
+		Mainbo
+		mb.run(dm);
+	}	
+	
+}
